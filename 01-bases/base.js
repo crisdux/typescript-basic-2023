@@ -1,2 +1,3 @@
-var nombre = "Cris";
-console.log("Hola, soy ".concat(nombre));
+"use strict";
+const nombre = "Cris";
+console.log(`Hola, soy ${nombre}`);
