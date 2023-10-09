@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 (() => {
     class Avenger {
         constructor(nombre, edad, isActive) {
@@ -12,4 +11,5 @@ Object.defineProperty(exports, "__esModule", { value: true });
     const thor = new Avenger("Thor", 500, true);
     console.log(thor.nombre);
     console.log(Avenger.altura);
+    // console.log(saludarAvenger("thor"));
 })();
