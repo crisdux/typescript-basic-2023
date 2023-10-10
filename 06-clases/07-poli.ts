@@ -11,7 +11,7 @@
             this.edad = edad;
         }
 
-        hacerSonido(): string{
+        hacerSonido(): string{ // este medodo se debe sobreescribir
             return "Sonido generico";
         }
     }
@@ -22,8 +22,8 @@
             super(nombre, edad);
             this.isCola = isCola;
         }
-
-        hacerSonido(): string {
+        
+        hacerSonido(): string { // aca el metodo hace algo
             return "Guau Guau";
         }
     }
@@ -35,13 +35,11 @@
             this.color = color;
         }
 
-        hacerSonido(): string {
+        hacerSonido(): string { // aca el mismo metodo hace otra cosa
             return "miau miau";
         }
     }
 
-
-    
 
     const miPerro = new Perro("boby", 5);
     console.log(miPerro);
