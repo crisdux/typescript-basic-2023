@@ -5,6 +5,7 @@
         isCola:boolean;
         bigotes?:boolean;
         sonido: () => string;
+        getNombre(nombre:string): string;
     };
 
     //creamos 2 perros
@@ -16,15 +17,22 @@
         bigotes:false,
         sonido(){
             return this.nombre;
-        }
+        },
+        getNombre(nombre:string) {
+            return nombre;
+        },        
     };
 
-    const cachu:Perro = {
-        nombre:"cachu",
-        edad:4,
-        isCola: true,
-        sonido(){
-            return "Hola"
-        }
-    }
-})();
+    console.log(boby.getNombre("boby"))
+
+
+
+//     const cachu:Perro = {
+//         nombre:"cachu",
+//         edad:4,
+//         isCola: true,
+//         sonido(){
+//             return "Hola"
+//         }
+//     }
+ })();
