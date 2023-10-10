@@ -86,4 +86,5 @@
     console.log(`El nuevo dial de la radio es: ${mi_radio.getDial}`);
     console.log("Los programas que tenemos son:" + " " + mi_radio.getProgramas);
     console.log(`Los programas juveniles que tenemos son: ${mi_radio.filterProgramasJuveniles(mi_radio.getProgramas)}`);
+    let a = 5;
 })();

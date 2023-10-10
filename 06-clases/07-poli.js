@@ -33,4 +33,7 @@
     console.log(miPerro.hacerSonido());
     const miGato = new Gato("michi", 3, "cafe");
     console.log(miGato.hacerSonido());
+    
+    
+    
 })();
