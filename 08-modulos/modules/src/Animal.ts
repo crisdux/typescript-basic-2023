@@ -6,6 +6,7 @@ class Animal {
     get getNombre(){
         return this.nombre;
     }
+
 }
 
 export default Animal;
