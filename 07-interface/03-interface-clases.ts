@@ -9,11 +9,11 @@
     }
 
     class Telefono implements Celular {
-        private marca:string;
-        private anio: number;
-        private megapixeles: number;
-        private bateria:number;
-        private isType: "adroid" | "iphone";
+        public marca:string;
+        public anio: number;
+        public megapixeles: number;
+        public bateria:number;
+        public isType: "adroid" | "iphone";
 
         constructor(marca:string, 
             anio:number, 
