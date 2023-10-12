@@ -1,5 +1,6 @@
 
 
+import { getAllPosts } from './AllPosts';
 import {genericFucntion} from './generics/01-generic';
 import { getPersonajes, getPokemon, getUsers } from './generics/02-poke';
 import { Hero } from './generics/interface';
@@ -57,3 +58,18 @@ const res = async () => {
 }
 
 res();
+
+
+console.log("-".repeat(50));
+
+const todosLosPosts = async() => {
+    try{
+        const res = await getAllPosts();
+        console.log(res)
+    }
+    catch{
+        console.log("Error")
+    }
+}
+
+todosLosPosts();
