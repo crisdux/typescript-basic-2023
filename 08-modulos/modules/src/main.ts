@@ -38,6 +38,7 @@
 import {genericFucntion} from './generics/01-generic';
 import { getPersonajes, getPokemon, getUsers } from './generics/02-poke';
 import { Hero } from './generics/interface';
+import { getIP, getIP2 } from './getIP';
 
 // import {Hero} from './generics/interface/Hero'
 // import {Villain} from './generics/interface/Villain'
@@ -68,3 +69,12 @@ getUsers(1)
 getPersonajes()
     .then((data) => console.log(data.results[0].name))
     .catch((err) => console.log(err));
+
+getIP("8.8.8.8","json")
+    .then((data) => console.log(data.ip))
+    .catch((err) => console.log(err))
+
+getIP2("8.8.8.8","json")
+    .then((data) => console.log(data.ip))
+    .catch((err) => console.log(err))
+    .finally(() => console.log("finally"))
